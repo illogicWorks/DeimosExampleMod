@@ -24,19 +24,6 @@ dependencies {
     implementation 'com.github.illogicWorks:deimos:0.1'
     // Add Mars
     implementation files('Mars.jar')
-    // Add dev env dependencies of mixin:
-     // Required for mixin annotation processor
-    annotationProcessor "org.ow2.asm:asm:${project.asm_version}"
-    annotationProcessor "org.ow2.asm:asm-analysis:${project.asm_version}"
-    annotationProcessor "org.ow2.asm:asm-commons:${project.asm_version}"
-    annotationProcessor "org.ow2.asm:asm-tree:${project.asm_version}"
-    annotationProcessor "org.ow2.asm:asm-util:${project.asm_version}"
-    
-    annotationProcessor ("net.fabricmc:sponge-mixin:${project.mixin_version}") {
-        exclude module: 'launchwrapper'
-        exclude module: 'guava'
-    }
-    
     
     // Add below any extra dependencies you need, though make sure you somehow add
     // them to your jar later! Deimos supports Jar-in-jar (given it uses Fabric Loader), but
