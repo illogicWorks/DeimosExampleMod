@@ -7,7 +7,8 @@ A template mod for using [Deimos](https://github.com/illogicWorks/Deimos) to mod
 Download the example mod, change the values in the `gradle.properties` and `fabric.mod.json`, and replace all `modid` you find,
 drop the `Mars.jar` in this directory and start modding.
 
-To test your mod, use the `DeimosExampleMod` launch configuration (tested with Eclipse).
+To test your mod, create a launch configuration with the main class being `KnotClient` (`net.fabricmc.loader.impl.launch.knot.KnotClient`)
+and the vm argument `-Dfabric.development=true`.
 
 Optionally (though not tested), the Mixin support from the MCDev plugin may be useful for modding with Deimos, and you should also be able to
 setup the annotation processor for Eclipse as mentioned in the Mixin readme.
