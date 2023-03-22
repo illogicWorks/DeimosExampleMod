@@ -8,7 +8,7 @@ Download the example mod, change the values in the `gradle.properties` and `fabr
 drop the `Mars.jar` in this directory and start modding.
 
 To test your mod, create a launch configuration with the main class being `KnotClient` (`net.fabricmc.loader.impl.launch.knot.KnotClient`)
-and the vm argument `-Dfabric.development=true`.
+and the vm argument `-Dfabric.development=true`. It's also recommended to change the working directory to the `run` folder (in Eclipse you can just do: `${workspace_loc:NameOfYourProject}/run/`). You can also use the gradle run task instead, but a run configuration is generally better.
 
 Optionally (though not tested), the Mixin support from the MCDev plugin may be useful for modding with Deimos, and you should also be able to
 setup the annotation processor for Eclipse as mentioned in the Mixin readme.
