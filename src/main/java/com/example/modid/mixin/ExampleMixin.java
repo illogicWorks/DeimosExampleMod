@@ -1,4 +1,4 @@
-package com.example.mixin;
+package com.example.modid.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 

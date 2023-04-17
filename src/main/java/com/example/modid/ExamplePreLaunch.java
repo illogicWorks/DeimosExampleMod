@@ -1,4 +1,4 @@
-package com.example;
+package com.example.modid;
 
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 
